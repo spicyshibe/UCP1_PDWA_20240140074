@@ -19,43 +19,39 @@
                 </center>
 
                 <div class="card shadow-sm rounded" style="width: 18rem;">
-                    <img src="https://mastodon.webs3.bark.lgbt/media_attachments/files/110/000/758/062/109/867/original/d03a6f8c2ce2d392.jpeg" class="card-img-top" alt="waduh mana nih solid" style="width: auto; height: auto;">
-                    <div class="card-body">
+                    <img id="foto" src="https://mastodon.webs3.bark.lgbt/media_attachments/files/110/000/758/062/109/867/original/d03a6f8c2ce2d392.jpeg" class="card-img-top" alt="waduh mana nih solid" style="width: auto; height: auto;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-warning" onclick="ganti_gambar()">ganti gambar</button>
                         <h5 class="card-title"><strong>FOTO</strong></h5>
                         <p class="card-text">kita sangat mahir di teknologi</p>
                     </div>
                 </div>
 
-                <div class="card shadow-sm rounded" style="width: 500px;">
+                <div class="card shadow-sm rounded" style="max-width: 500px;">
                     <div class="ratio ratio-16x9">
                         <iframe width="auto" height="auto" src="https://www.youtube.com/embed/wVAqzbQe7Dk?autoplay=1&mute=1&loop" title="Why so many furries work in IT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h5 class="card-title"><strong>Video</strong></h5>
                         <p class="card-text">Member kami sangat solid dan mahir di teknologi</p>
                     </div>
                 </div>
 
-                <div class="card shadow-sm rounded" style="width: auto;">
-                    <audio src=""></audio>
-                    <div class="card-body">
-                        <p class="card-text">salah satu member kami sedang rakit pc</p>
+                <div class="card shadow-sm rounded" style="width: 400px;">
+                    
+                    <audio id="iniaudionya" src="audio/EMBEGE  OFFICIAL LIRIC VIDEO.mp3"></audio>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Audio MBG</h5>
+                        <p class="card-text">ini adalah audio yang sudah di siapkan</p>
+                        <button class="btn btn-primary" onclick="play_audio()">play</button>
+                        <button class="btn btn-danger" onclick="stop_audio()">stop</button>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
-
-    <div class="container">
-
-    </div>
-
-    <div class="gallery">
-        <img src="" alt="">
-        <video src=""></video>
-        
-    </div>
+    <script src="external.js"></script>
     
 </body>
 </html>
