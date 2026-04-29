@@ -4,18 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form pengisian</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
 <body>
-
+<body>
     <div class="container">
-        <h1>FORM PENGISIAN DATA</h1>
-        <button><a href="index.html">Home</a></button>
-    </div>
+        <div class="card shadow-sm rounded">
+            <div class="card-body" style="background-color: antiquewhite;">
+                <a href="./index.html"><button type="button" class="btn btn-primary">Home</button></a>
+                <center>
+                    <h1><strong>FORM PENDAFTARAN MEMBER BARU</strong></h1>
+                </center>
+                
+                <form id="formpendaftaran">
 
-    <div>
-        <label for="form">nama: </label>
-        
+                <div class="mb-3">
+                    <label for="inputNama" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="formnama" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="formemail" placeholder="Masukkan email" required>
+                </div>
+
+                <div class="mb-3">
+                <label for="BidangMinat" class="form-label">Bidang Minat</label>
+                <select class="form-select" id="formminat" required>
+                <option selected disabled>Pilih...</option>
+                <option value="1">Cyber Security</option>
+                <option value="2">Database</option>
+                <option value="3">Programming</option>
+                <option value="4">Networking</option>
+                </select>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                </div>
+        </div>
     </div>
-    
+    <script src="external.js"></script>
 </body>
 </html>
